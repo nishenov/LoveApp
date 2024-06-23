@@ -1,5 +1,7 @@
-package com.example.myapplication
+package com.example.myapplication.MVP
 
+import com.example.myapplication.models.LoveApiService
+import com.example.myapplication.models.LoveResult
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
