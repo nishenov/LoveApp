@@ -4,13 +4,16 @@ import android.app.Application
 import androidx.room.Room
 import com.example.myapplication.API.LoveApiService
 import com.example.myapplication.data.db.LoveDatabase
+import com.example.myapplication.models.LoveApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class App : Application() {
+
     companion object{
         var loveDatabase: LoveDatabase? = null
     }
+
         var api: LoveApiService = Retrofit.Builder()
             .baseUrl("https://love-calculator.p.rapidapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
